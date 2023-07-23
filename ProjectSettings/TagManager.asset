@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - Coin
+  - Bullet
+  - Wall
+  - Drop
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Enemy
+  - Drop
+  - Wall
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 1512185473
+    locked: 0
+  - name: UI
+    uniqueID: 2205408623
+    locked: 0
+  - name: Drop
+    uniqueID: 2791455945
+    locked: 0
+  - name: Enemy
+    uniqueID: 2206137097
+    locked: 0
+  - name: Bullet
+    uniqueID: 2089342853
+    locked: 0
+  - name: Object
+    uniqueID: 2422639115
+    locked: 0
+  - name: Player
+    uniqueID: 3152458797
+    locked: 0
