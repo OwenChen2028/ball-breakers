@@ -6345,7 +6345,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveForce: 20
   dashForce: 1000
-  dashCooldown: 5
+  dashCooldown: 4
   immuneVelocity: 10.01
   knockbackForce: 750
   knockedbackForce: 500

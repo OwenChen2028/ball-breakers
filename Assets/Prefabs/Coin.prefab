@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  magnetRange: 2.5
+  magnetRange: 2
   magnetForce: 75
   lifeSpan: 10
   poofEffect: {fileID: 3517307856767196068, guid: 8e5116db06fe23f4098e2605e6382ceb, type: 3}

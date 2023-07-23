@@ -32,7 +32,7 @@ public class PowerUp : MonoBehaviour
     {
         if (target != null && !target.GetComponent<PlayerController>().dead && target.GetComponent<PlayerController>().money >= 10)
         {
-            if (Vector2.Distance(target.transform.position, transform.position) <= magnetRange)
+            if (Vector2.Distance(target.transform.position, transform.position) <= magnetRange + (target.GetComponent<CircleCollider2D>().radius * target.transform.localScale.x))
             {
                 Vector2 magnetDirection = target.transform.position - transform.position;
                 rb.AddForce(magnetDirection.normalized * magnetForce);

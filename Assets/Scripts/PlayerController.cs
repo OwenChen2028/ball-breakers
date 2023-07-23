@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(rb.velocity.magnitude);
+        //Debug.Log(rb.velocity.magnitude);
 
         mouseInput = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
 
