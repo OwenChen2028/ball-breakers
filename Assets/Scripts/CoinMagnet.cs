@@ -31,7 +31,7 @@ public class CoinMagnet : MonoBehaviour
     {
         if (target != null && !target.GetComponent<PlayerController>().dead)
         {
-            Debug.Log(target.GetComponent<CircleCollider2D>().radius * target.transform.localScale.x);
+            //Debug.Log(target.GetComponent<CircleCollider2D>().radius * target.transform.localScale.x);
             if (Vector2.Distance(target.transform.position, transform.position) <= magnetRange + (target.GetComponent<CircleCollider2D>().radius * target.transform.localScale.x))
             {
                 Vector2 magnetDirection = target.transform.position - transform.position;

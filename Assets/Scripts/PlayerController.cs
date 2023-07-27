@@ -1,3 +1,4 @@
+using EZCameraShake;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -65,11 +66,12 @@ public class PlayerController : MonoBehaviour
             transform.GetChild(0).GetChild(0).gameObject.SetActive(true);
         }
 
-        if (!dead && canDash && Input.GetButtonDown("Fire1"))
+        if (!dead && canDash && Input.GetMouseButtonDown(0))
         {
             rb.AddForce(mouseInput.normalized * dashForce);
             StartCoroutine(DashCooldown());
             SoundManager.PlaySound("dash");
+            CameraShaker.Instance.ShakeOnce(1.5f, 7.5f, 0f, 0.5f); //shake
         }
     }
 
@@ -111,6 +113,7 @@ public class PlayerController : MonoBehaviour
                 StartCoroutine(other.gameObject.GetComponent<EnemyController>().DoDeath());
                 streak += 1;
                 SoundManager.PlaySound("pop");
+                CameraShaker.Instance.ShakeOnce(1f, 5f, 0f, 0.5f); //shake
             }
         }
         else if (other.gameObject.CompareTag("Bullet"))
@@ -178,6 +181,7 @@ public class PlayerController : MonoBehaviour
 
     public IEnumerator DoDeath()
     {
+        CameraShaker.Instance.ShakeOnce(2f, 10f, 0f, 0.5f); //shake
         dead = true;
         foreach (Collider2D col in GetComponents<Collider2D>())
         {
