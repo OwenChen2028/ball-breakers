@@ -71,7 +71,7 @@ public class PlayerController : MonoBehaviour
             rb.AddForce(mouseInput.normalized * dashForce);
             StartCoroutine(DashCooldown());
             SoundManager.PlaySound("dash");
-            CameraShaker.Instance.ShakeOnce(1.5f, 7.5f, 0f, 0.5f); //shake
+            CameraShaker.Instance.ShakeOnce(2f, 2f, 0.1f, 0.5f); //shake from dash
         }
     }
 
@@ -113,7 +113,7 @@ public class PlayerController : MonoBehaviour
                 StartCoroutine(other.gameObject.GetComponent<EnemyController>().DoDeath());
                 streak += 1;
                 SoundManager.PlaySound("pop");
-                CameraShaker.Instance.ShakeOnce(1f, 5f, 0f, 0.5f); //shake
+                CameraShaker.Instance.ShakeOnce(2f, 1.5f, 0.1f, 0.5f); //shake from kill
             }
         }
         else if (other.gameObject.CompareTag("Bullet"))
@@ -181,7 +181,7 @@ public class PlayerController : MonoBehaviour
 
     public IEnumerator DoDeath()
     {
-        CameraShaker.Instance.ShakeOnce(2f, 10f, 0f, 0.5f); //shake
+        CameraShaker.Instance.ShakeOnce(5f, 4f, 0.1f, 1f); //shake from death
         dead = true;
         foreach (Collider2D col in GetComponents<Collider2D>())
         {
