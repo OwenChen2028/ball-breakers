@@ -1,6 +1,6 @@
 Ball Breakers © 2023 by The Ball Breakers Team is licensed under CC BY-NC-ND 4.0
 
-The project should be built using Unity version 2022.3.3f1 (LTS)
+The project should be built using Unity version 2022.3.34f1 (LTS)
 
 Most code written for the project is located in "Assets/Scripts/"
 
