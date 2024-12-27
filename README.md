@@ -4,4 +4,4 @@ The Ball Breakers Team consists of Owen Chen, Paul Zhou, Ciana Jin, Jazzlin Yee,
 
 The project should be built using Unity version 2022.3.34f1 (LTS)
 
-An earlier version of the game is available to play at: https://ilikeovensalot.itch.io/ball-breakers-roll-reversed
+An earlier version of the game is available to play at: [https://ilikeovensalot.itch.io/ball-breakers-roll-reversed](https://elephantfanatic.itch.io/ball-breakers-roll-reversed)
